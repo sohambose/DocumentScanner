@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DocumentScanner.Views.DocumentLandingPage">
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="Transparent" Padding="20">
+            <ListView x:Name="lstDocuments" ItemSelected="lstDocuments_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label x:Name="lblFileName" Text="{Binding FileName}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button x:Name="btnOpenGallery" 
+                         VerticalOptions="EndAndExpand" AbsoluteLayout.LayoutBounds="1,0.85,50,50" AbsoluteLayout.LayoutFlags="PositionProportional" 
+                         BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100" BorderRadius="0"
+                         ImageSource="open_gallery.png" 
+                         Clicked="btnOpenGallery_Clicked"></Button>
+            <Button x:Name="btnOpenCamera" VerticalOptions="EndAndExpand" 
+                    AbsoluteLayout.LayoutBounds="1,1,55,55" AbsoluteLayout.LayoutFlags="PositionProportional" 
+                    BackgroundColor="Transparent" WidthRequest="100" HeightRequest="100" BorderRadius="10"
+                    ImageSource="camera.png" Clicked="btnOpenCamera_Clicked"></Button>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

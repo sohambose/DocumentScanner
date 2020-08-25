@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DocumentScanner.Views.CaptureAndProcessImage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Padding="20" Spacing="30">
+            <ImageButton x:Name="btnUndo" BackgroundColor="Transparent" Source="undo.png"></ImageButton>
+            <ImageButton x:Name="btnSave" BackgroundColor="Transparent" Source="save_image.png" Clicked="btnSave_Clicked"></ImageButton>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <ActivityIndicator x:Name="spnrProcessingImage" Color="Orange"                                
+                               AbsoluteLayout.LayoutBounds="0.5,0.5,50,50" AbsoluteLayout.LayoutFlags="PositionProportional"
+                               IsRunning="{Binding Path=IsLoading, Source={x:Reference Name = imgCaptured} }"
+                               IsVisible="{Binding Path=IsLoading, Source={x:Reference Name=imgCaptured}}">
+            </ActivityIndicator>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,0.9" AbsoluteLayout.LayoutFlags="All" 
+                         BackgroundColor="Transparent">
+                <Image x:Name="imgCaptured" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Image>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" AbsoluteLayout.LayoutBounds="0.05,1,1,1" AbsoluteLayout.LayoutFlags="All" 
+                         HorizontalOptions="Center" VerticalOptions="EndAndExpand" Padding="5" Spacing="50">
+                <ImageButton x:Name="btnRotateLeft" BackgroundColor="Transparent" Source="rotate_left_black.png"   Clicked="btnRotateLeft_Clicked"></ImageButton>
+                <ImageButton x:Name="btnRotateRight" BackgroundColor="Transparent"  Source="rotate_right_black.png" Clicked="btnRotateRight_Clicked"></ImageButton>
+
+                <ImageButton x:Name="btnCrop" BackgroundColor="Transparent" Source="cropimage.png"  Clicked="btnCrop_Clicked"></ImageButton>
+                <ImageButton x:Name="btnGrayscaleConvert" BackgroundColor="Transparent"  Source="grayscale.png" Clicked="btnGrayscaleConvert_Clicked"></ImageButton>
+                <ImageButton x:Name="btnDeleteImage" BackgroundColor="Transparent"  Source="delete_image.png"  Clicked="btnDeleteImage_Clicked"></ImageButton>
+            </StackLayout>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
