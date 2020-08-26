@@ -7,12 +7,13 @@
              x:Class="DocumentScanner.Views.DocumentLandingPage">
     <ContentPage.Content>
         <AbsoluteLayout BackgroundColor="Transparent" Padding="20">
-            <ListView x:Name="lstDocuments" ItemSelected="lstDocuments_ItemSelected">
+            <ListView x:Name="lstFolders" ItemSelected="lstFolders_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label x:Name="lblFileName" Text="{Binding FileName}"></Label>
+                                <Image Source="folder.png"></Image>
+                                <Label x:Name="lblFolderName" Text="{Binding FolderName}" VerticalOptions="CenterAndExpand"></Label>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

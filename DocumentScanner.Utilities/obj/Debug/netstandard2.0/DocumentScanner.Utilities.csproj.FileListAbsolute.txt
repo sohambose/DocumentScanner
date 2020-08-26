@@ -1,0 +1,5 @@
+D:\Projects\DocumentScanner\DocumentScanner.Utilities\bin\Debug\netstandard2.0\DocumentScanner.Utilities.deps.json
+D:\Projects\DocumentScanner\DocumentScanner.Utilities\bin\Debug\netstandard2.0\DocumentScanner.Utilities.dll
+D:\Projects\DocumentScanner\DocumentScanner.Utilities\obj\Debug\netstandard2.0\DocumentScanner.Utilities.csprojAssemblyReference.cache
+D:\Projects\DocumentScanner\DocumentScanner.Utilities\obj\Debug\netstandard2.0\DocumentScanner.Utilities.AssemblyInfoInputs.cache
+D:\Projects\DocumentScanner\DocumentScanner.Utilities\obj\Debug\netstandard2.0\DocumentScanner.Utilities.AssemblyInfo.cs

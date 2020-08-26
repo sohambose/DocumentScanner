@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "W19xi+egu/08YYCphlAq+8e0Uv6jXRON3JF72e0DSNoJ5a5y1YYNuE4awUr0eJ1DO7+Qw4a19/+FGriqpPG0ow==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\DocumentScanner\\DocumentScanner.Utilties\\DocumentScanner.Utilties.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\soham\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\soham\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

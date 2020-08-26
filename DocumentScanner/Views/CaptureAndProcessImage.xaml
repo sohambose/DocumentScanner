@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="DocumentScanner.Views.CaptureAndProcessImage">
+             x:Class="DocumentScanner.Views.CaptureAndProcessImage"
+             Padding="10">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Padding="20" Spacing="30">
             <ImageButton x:Name="btnUndo" BackgroundColor="Transparent" Source="undo.png"></ImageButton>

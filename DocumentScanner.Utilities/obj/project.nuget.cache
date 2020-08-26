@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z3XtlYrwIEel80l22nF/4JwQrbZdAQNml2FU68LcXrnzLYm5hEFeRccmfl2KO/c7jnVF/EfupABwhPRLe1EYQg==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\DocumentScanner\\DocumentScanner.Utilities\\DocumentScanner.Utilities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\soham\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\soham\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\soham\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\soham\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\soham\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512",
+    "C:\\Users\\soham\\.nuget\\packages\\xamarin.plugin.imageedit\\1.0.0\\xamarin.plugin.imageedit.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

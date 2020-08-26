@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentScanner.Android", "DocumentScanner.Android\DocumentScanner.Android.csproj", "{BD2BD670-6DEC-449F-A1D1-6B6B2495D869}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentScanner", "DocumentScanner\DocumentScanner.csproj", "{F0D9A19F-9B5E-4B25-ABD0-3318AC1B7F98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentScanner", "DocumentScanner\DocumentScanner.csproj", "{F0D9A19F-9B5E-4B25-ABD0-3318AC1B7F98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
