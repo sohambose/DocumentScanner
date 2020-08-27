@@ -5,20 +5,32 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="DocumentScanner.Views.DocumentLandingPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+            <SearchBar x:Name="srchFolders" Placeholder="Search....." PlaceholderColor="LightGray" TextChanged="srchFolders_TextChanged"
+                       TextColor="White"></SearchBar>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
         <AbsoluteLayout BackgroundColor="Transparent" Padding="20">
-            <ListView x:Name="lstFolders" ItemSelected="lstFolders_ItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="folder.png"></Image>
-                                <Label x:Name="lblFolderName" Text="{Binding FolderName}" VerticalOptions="CenterAndExpand"></Label>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <StackLayout>
+                <ListView x:Name="lstFolders" ItemSelected="lstFolders_ItemSelected" IsPullToRefreshEnabled="True" Refreshing="lstFolders_Refreshing">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="folder.png"></Image>
+                                    <Label x:Name="lblFolderName" Text="{Binding FolderName}" VerticalOptions="CenterAndExpand"></Label>
+                                </StackLayout>
+                                <ViewCell.ContextActions>
+                                    <MenuItem x:Name="cntxtbtnDelete" Text="Delete" IconImageSource="delete_orange.png" Clicked="cntxtbtnDelete_Clicked"
+                                              CommandParameter="{Binding .}"></MenuItem>
+                                </ViewCell.ContextActions>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
 
             <Button x:Name="btnOpenGallery" 
                          VerticalOptions="EndAndExpand" AbsoluteLayout.LayoutBounds="1,0.85,50,50" AbsoluteLayout.LayoutFlags="PositionProportional" 

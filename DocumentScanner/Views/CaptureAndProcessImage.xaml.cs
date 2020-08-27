@@ -60,7 +60,11 @@ namespace DocumentScanner.Views
                     });
                 }
                 else
+                {
+                    GC.Collect();
                     await Navigation.PushAsync(new DocumentLandingPage());  //Photo capture failure- Go to landing page
+                }
+                    
             }
         }
 
@@ -239,6 +243,7 @@ namespace DocumentScanner.Views
                     string SaveFilePath = Path.Combine(SaveDirectory, saveFileName + ".jpg");
                     File.Copy(_EditFile, SaveFilePath, true);
 
+                    GC.Collect();
                     await Navigation.PushAsync(new DocumentLandingPage());
                 }
 

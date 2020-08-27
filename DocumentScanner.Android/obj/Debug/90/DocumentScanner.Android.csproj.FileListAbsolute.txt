@@ -493,3 +493,4 @@ D:\Projects\DocumentScanner\DocumentScanner.Android\obj\Debug\90\stamp\_Generate
 D:\Projects\DocumentScanner\DocumentScanner.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\Projects\DocumentScanner\DocumentScanner.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 D:\Projects\DocumentScanner\DocumentScanner.Android\obj\Debug\90\res\drawable\folder.png
+D:\Projects\DocumentScanner\DocumentScanner.Android\obj\Debug\90\res\drawable\delete_orange.png
